@@ -18,7 +18,6 @@ function capitalizeWordsInArray(array) {
 
 function getTitleCase(sentence) {
 	const wordsFromSentence = getWordsFromSentence(sentence);
-	const capitalizedWordsInArray = capitalizeWordsInArray(wordsFromSentence);
-	return capitalizedWordsInArray.join(' ');
+	return capitalizeWordsInArray(wordsFromSentence).join(' ');
 }
 console.log(getTitleCase('hello my name is youssef'));
