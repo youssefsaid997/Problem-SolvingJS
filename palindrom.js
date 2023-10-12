@@ -20,3 +20,13 @@ function isPalindrom(word) {
 }
 const val = isPalindrom('madam');
 console.log(val);
+
+//js solution
+
+function isPalnidrome(word) {
+	const formattedWord = word.toLowerCase().replace(/[^a-z0-9]/g, '');
+
+	const reversedWord = formattedWord.split('').reverse().join();
+
+	return formattedWord === reversedWord;
+}
