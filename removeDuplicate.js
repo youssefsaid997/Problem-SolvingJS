@@ -24,7 +24,16 @@ function findValue(value, arr) {
 	return arr.indexOf(value);
 }
 
+function removeDuplicate(arr) {
+	return Array.from(new Set(arr));
+}
+
 console.log(
+	'array methods in js solution',
 	removeDuplicates([1, 2, 2, 4, '5', '5', 6, 6, 6, true, 6, 6, 6, 7, true])
+);
+console.log(
+	'set soultion',
+	removeDuplicate([1, 2, 2, 4, '5', '5', 6, 6, 6, true, 6, 6, 6, 7, true])
 );
 // console.log(findValue(2, [1, 2, 2, 4, 5, 5, 6, 6, 6, 6, 6, 6, 7]));
